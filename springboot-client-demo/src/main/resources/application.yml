@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: springboot-client
+server:
+  port: 8081
+grpc:
+  client:
+    GLOBAL:
+      address: 'static://localhost:8099'
+      negotiation-type: plaintext

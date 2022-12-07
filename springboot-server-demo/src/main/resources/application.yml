@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: springboot-server
+server:
+  port: 8082
+grpc:
+  server:
+    port: 8099

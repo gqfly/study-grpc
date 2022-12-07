@@ -1,0 +1,18 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "com.gqfly.springboot.server.proto.news";
+option java_outer_classname = "NewsProto";
+
+package news;
+
+service NewsService {
+    rpc hello(StringRequest) returns (StringResponse);
+}
+
+message StringRequest {
+    string name = 1;
+}
+
+message StringResponse {
+    string result = 1;
+}
